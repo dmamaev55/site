@@ -1,0 +1,62 @@
+https://git-scm.com/
+*atom - platformio-ide-terminal
+git --version
+
+
+git config --global user.name ""
+LOCAL git config user.name ""
+git config --global user.email ""
+LOCAL git config user.email ""
+
+git-init — создать пустой репозиторий Git или повторно инициализировать существующий.
+git add . — добавить содержимое файла в стадию ожидания
+git status — Показать файлы в ожидании на загрузку
+git commit -m  - добавить в локальное хранилище с комментарием
+git rm --cached index.html - удалить файл index.html из стадии ожидания
+git log - посмотреть все изменения
+git log --oneline  - посмотреть все изменения в одну строчку
+git log -p - выводит диф для каждого коммита
+git show - посмотреть все изменения в рамках одного коммита
+git blame *файл - показывает кто менял и в каком коммите
+git grep - ищет совпадение с указанной строкой во всех файлах проекта
+  # Флаг i позволяет искать без учета регистра
+
+.gitignore - файлы для игнорирования*
+  index.html
+  css/
+  js/*.js
+  style.css
+  bin/
+  admin/
+  *.php
+
+git checkout *c16f0fe - посмотреть определенные изменения
+git checkout master - вернуться к последней версии нашей ветки
+git revert
+*выйти из редактора bin   :wq
+git reset c16f0fe --hard
+
+git branch "" - создать новую ветку
+git checkout "" - перейти на нужную ветку
+git branch -a  - посмотреть все ветки
+git checkout -b "" - создать и перейти на новую ветку
+git merge ""  - обьединить ветку с указанной
+git branch -d ""  - удалить указанную ветку (если не закомичена ветка или
+не замержена то ее нельзя удалить)
+git branch -D ""  - принудительно удаляет ветку даже если она не замержена
+git push remote_name -d remote_branch_name
+
+git branch -r  - показать удаленные репозитории
+  *git push origin -d test
+git remote - при выводе origin мы подключены к удаленному депозиторию
+git push -u origin master* - закинуть файлы с основной ветки на удаленный депозиторий
+git pull - клонировать репозиторий (скачивает новые файлы добавленные в проект)
+
+git restore index.html - восстановить файл index.html
+git rm index.html - удалить файл index.html
+git diff - посмотреть изменения
+echo "name" > name.txt - создать файл через гит
+echo "name2" >> name.txt - добавить строку в файл через гит
+mv hexlet.txt hexlet2.txt - переименовать файл
+
+Hello Hexlet!
